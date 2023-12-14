@@ -43,6 +43,9 @@ if (!empty($_POST["email"]) && !empty($_POST["password"])){
 
     //Vérifier si le MdP du formulaire correspond à celui en BDD
     if ($user && password_verify($password, $user['password'])){
+        //Stocker les infos de l'utilisateur en session
+        $_SESSION['user'] = $user;
+
         //Redirection vers le fichier "dashboard.php
         header('location: dashboard.php');
         exit;

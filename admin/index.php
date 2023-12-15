@@ -13,21 +13,23 @@
 </head>
 <body> 
 
-    <form action="./login.php" method="post" enctype="multipart/form-data" class="p-3">
+    
+
+    <form action="./login.php" method="post" class="p-3">
         <h1>Connexion à votre compte</h1>
 
  <!-- Mes erreurs ici -->
  <?php
-                    if (isset($_SESSION['error'])):
-                ?>
-                    <div class="alert alert-danger">
-                        <?php echo $_SESSION['error']; ?>
-                    </div>
-                <?php
-                    // Destruction de la session "error"
-                    unset($_SESSION['error']);
-                    endif
-                ?>
+        if (isset($_SESSION['error'])):
+    ?>
+        <div class="alert alert-danger">
+            <?php echo $_SESSION['error']; ?>
+        </div>
+    <?php
+        // Destruction de la session "error"
+        unset($_SESSION['error']);
+        endif
+    ?>
 
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>

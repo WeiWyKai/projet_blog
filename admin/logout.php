@@ -11,4 +11,4 @@
  unset($_SESSION['user']);
 
  //Redirection vers le formulaire de connexion
- header('Location:index.php');
+ header('Location:../index.php');

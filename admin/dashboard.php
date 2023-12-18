@@ -38,6 +38,7 @@ $articles =$query->fetchAll();
 </head>
 <body class="p-5">
     <h1 class="m-3">Dashboard</h1>
+    <a href="../index.php" class="btn btn-primary my-3">Accueil</a> 
     <a href="logout.php" class="btn btn-danger my-3">Déconnexion</a>
 
     <!-- Message de succès -->

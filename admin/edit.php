@@ -98,7 +98,7 @@ $articlesCategories = $query->fetchAll(PDO::FETCH_COLUMN);
         </div>
         <div class="mb-3">
             <label for="picture" class="form-label">Photo de couverture</label>
-            <input type="file" class="form-control" id="picture" name="picture" >
+            <input type="file" class="form-control" id="picture" name="cover" >
         </div>
         <div class="mb-3">
             <label for="category" class="form-label">Catégories</label>
